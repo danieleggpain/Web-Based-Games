@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Blackjack</title>
+		<meta name="description" content="Cross-Country Assignment Bayview Glen">
+		<meta name="author" content="Daniel Yan">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+		<link rel="stylesheet" href="css/Blackjack.css?ver=1.1">
+
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/Blackjack.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body>
+		<div id="game">
+			<div id="dealer">
+				<div id="dealerInfo" class="SmallLeftSection">
+					<h2>Dealer</h2>
+					<h3>
+						Total points: <span id="Dpoints">?</span>
+					</h3>
+				</div>
+				<div id="dealerCards" class="LargeRightSection"></div>
+			</div>
+			<div id="player">
+				<div id="playerCards" class="LargeLeftSection" align="right"></div>
+				<div id="playerInfo" class="SmallRightSection">
+					<div align="right" class="id">
+						<span id="playerID" class="h2">Player</span>
+						<h3>
+						Total points: <span id="Ppoints">0</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div id="commands" class="bottomCenter">
+				<table>
+					<tr>
+						<td><button type="button" id="Stats" class="largeButton">Stats</button></td>
+					</tr>
+					<tr>
+						<td><button type="button" id="playerWallet" class="largeButton">Wallet</button></td>
+						<td align="center"><button type="button" id="stand" class="largeButton">STAND</button><button type="button" id="hit" class="largeButton">HIT</button><button type="button" id="dd" class="largeButton">DOUBLE DOWN</button></td>
+						<td align="right"><button type="button" id="playAgain" class="largeButton">Play Again</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="statsDialog" title="Player Stats" class="ui-widget">
+			<p>You have won <b><span id="numberOfWin">0</span></b> times!</p>
+			<p>You have lost <b><span id="numberOfLose">0</span></b> times!</p>
+			<p>The most amount of money you ever had is <b>$<span id="mostAmountMoney">500</span></b>!</p>
+		</div>
+		<div id="walletDialog" title="Player Wallet" class="ui-widget">
+			<p>You have <b>$<span id="playerMoney">500</span></b>!</p>
+			<p>For this round, you have a bet of <b>$<span id="playerBet">0</span></b>!</p>
+		</div>
+		<div id="login"  style="text-align:center;" title="Register Player" class="ui-widget">
+			<p><h2 style="text-align:center;">Welcome to Blackjack<br/>by Coding Master Daniel!</h2></p>
+			<p><h2>Please enter your name: <input type="text" id="playerName" style="width: 150px"></h2></p>
+			<p style="text-align:center;">You have <b>$<span id="walletCash">500</span> in your wallet</b>!</p>
+			<p><h2>Please enter your bet: <input type="text" id="betInput" style="width: 100px"></h2><p>
+			<p style="text-align:center;"><button type="button" id="submit" class="largeButton">Submit</button></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+	background-color: #11AD20;
+}
+
+
+.SmallLeftSection {
+	display: inline-block;
+	width: 20%;
+	height: 345px;
+	vertical-align: top;
+}
+
+.LargeLeftSection {
+	display: inline-block;
+	width: 79.5%;
+	height: 345px;
+	vertical-align: top;
+}
+
+.SmallRightSection {
+	display: inline-block;
+	width: 20%;
+	height: 345px;
+	vertical-align: top;
+}
+
+.LargeRightSection {
+	display: inline-block;
+	width: 79.5%;
+	height: 345px;
+	vertical-align: top;
+}
+
+.largeButton {
+	width: 150px;
+	height: 50px;
+}
+
+table {
+	width: 100%;
+}
+
+.bottomCenter{
+	bottom: 0;
+}
+
+.id{
+	/* need background image*/
+}
+
+.h2 {
+	display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}

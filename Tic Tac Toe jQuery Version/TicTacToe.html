@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Tic Tac Toe Game</title>
+		<meta name="description" content="Tic Tac Toe Assignment jQuery Version">
+		<meta name="author" content="Daniel Yan">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/jquery-ui.theme.css">
+		<link rel="stylesheet" href="css/TicTacToe.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+		<script src="js/TicTacToe.js"></script>
+	</head>
+
+	<body>
+		<div id = "top">
+		<h1>Welcome to Tic Tac Toe Game</h1>
+		<p>
+			Tic-tac-toe (also known as Noughts and crosses or Xs and Os) is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
+		</p>
+		<h2> Current player is: <span id = "player">X</span>!</h2>
+		</div>
+		<div id = "body">
+			<table>
+				<tr>
+					<td id="td0"></td>
+					<td id="td1"></td>
+					<td id="td2"></td>
+				</tr>
+				<tr>
+					<td id="td3"></td>
+					<td id="td4"></td>
+					<td id="td5"></td>
+				</tr>
+				<tr>
+					<td id="td6"></td>
+					<td id="td7"></td>
+					<td id="td8"></td>
+				</tr>
+			</table>
+			<div id="buttons">
+					<input type="button" onclick="playAgain();" value="Play Again"/>
+			</div>
+		</div>
+		<div id = "bottom">
+			<h2>Score Summary:</h2>
+			<p class = "large">
+				Xs won <span id="xWin">0</span> times! Os won <span id="oWin">0</span> times!
+			</p>
+		</div>
+		<div id="dialogGameOver" title="Victory" class="ui-widget">
+			<p id="msg"><span id="winMessage">X won this game!</span></p>
+		</div>
+			
+	</body>
+
+
+</html>

@@ -1,0 +1,51 @@
+body{
+	background-color: #B0E4E9;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+p {
+	margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+}
+
+.large {
+	font-size: 200%;
+	width: 1000px;
+}
+
+table { 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+td {
+	border: 10px solid black;
+	height: 150px;
+	width: 150px;
+}
+
+#buttons {
+	text-align: center;
+}
+
+.xBlocks {
+	background-image: url("../images/X.png");
+}
+
+.oBlocks {
+	background-image: url("../images/O.png");
+}
+
+.reset {
+	background-image: none;
+}
+
+p#msg{
+	width:auto !important;
+}
+
